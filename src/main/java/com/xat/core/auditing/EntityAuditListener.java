@@ -1,10 +1,10 @@
 package com.xat.core.auditing;
 
-import com.globits.core.utils.CommonUtils;
-import com.globits.core.utils.SecurityUtils;
-import javax.persistence.PostRemove;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
+import com.xat.core.utils.CommonUtils;
+import com.xat.core.utils.SecurityUtils;
+import jakarta.persistence.PostRemove;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 import org.joda.time.LocalDateTime;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.jwt.Jwt;

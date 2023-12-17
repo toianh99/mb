@@ -104,7 +104,6 @@ public class CoreDateTimeUtil {
       List<Date> datesInRange = new ArrayList();
       calendar.setTime(startDate);
       Calendar endCalendar = Calendar.getInstance();
-      int maxDay = false;
       int maxDay = calendar.getActualMaximum(5);
       endCalendar.set(year, month, maxDay);
       endCalendar.add(5, 1);
@@ -128,7 +127,6 @@ public class CoreDateTimeUtil {
       List<Date> datesInRange = new ArrayList();
       calendar.setTime(startDate);
       Calendar endCalendar = Calendar.getInstance();
-      int maxDay = false;
       int maxDay = calendar.getActualMaximum(5);
       SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/yyyy");
       if (simpleDateFormat.format(new Date()).equals(simpleDateFormat.format(calendar.getTime()))) {

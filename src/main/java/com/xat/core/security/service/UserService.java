@@ -1,10 +1,11 @@
-package com.globits.security.service;
+package com.xat.core.security.service;
 
-import com.globits.core.service.GenericService;
-import com.globits.security.domain.User;
-import com.globits.security.dto.UserDto;
-import com.globits.security.dto.UserFilterDto;
 import java.util.UUID;
+
+import com.xat.core.security.domain.User;
+import com.xat.core.security.dto.UserDto;
+import com.xat.core.security.dto.UserFilterDto;
+import com.xat.core.service.GenericService;
 import org.springframework.data.domain.Page;
 import org.springframework.security.core.Authentication;
 

@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Country;
+import com.xat.core.domain.Country;
+
 import java.util.UUID;
 
 public class CountryDto {

@@ -1,7 +1,7 @@
-package com.globits.security.service.impl;
+package com.xat.core.security.service.impl;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.globits.security.domain.User;
+import com.xat.core.security.domain.User;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;

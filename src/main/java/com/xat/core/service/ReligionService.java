@@ -1,7 +1,7 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Religion;
-import com.globits.core.dto.ReligionDto;
+import com.xat.core.domain.Religion;
+import com.xat.core.dto.ReligionDto;
 import java.util.UUID;
 
 public interface ReligionService extends GenericService<Religion, UUID> {

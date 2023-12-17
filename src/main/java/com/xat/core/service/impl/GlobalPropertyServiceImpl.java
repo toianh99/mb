@@ -1,9 +1,9 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.GlobalProperty;
-import com.globits.core.dto.GlobalPropertyDto;
-import com.globits.core.repository.GlobalPropertyRepository;
-import com.globits.core.service.GlobalPropertyService;
+import com.xat.core.domain.GlobalProperty;
+import com.xat.core.dto.GlobalPropertyDto;
+import com.xat.core.repository.GlobalPropertyRepository;
+import com.xat.core.service.GlobalPropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

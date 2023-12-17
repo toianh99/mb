@@ -1,11 +1,11 @@
-package com.globits.security.service.impl;
+package com.xat.core.security.service.impl;
 
-import com.globits.core.service.impl.GenericServiceImpl;
-import com.globits.security.domain.Role;
-import com.globits.security.domain.User;
-import com.globits.security.dto.RoleDto;
-import com.globits.security.repository.RoleRepository;
-import com.globits.security.service.RoleService;
+import com.xat.core.service.impl.GenericServiceImpl;
+import com.xat.core.security.domain.Role;
+import com.xat.core.security.domain.User;
+import com.xat.core.security.dto.RoleDto;
+import com.xat.core.security.repository.RoleRepository;
+import com.xat.core.security.service.RoleService;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

@@ -1,10 +1,9 @@
 package com.xat.core.domain;
 
 import java.util.UUID;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import org.hibernate.annotations.Type;
 import org.joda.time.LocalDateTime;
 
@@ -12,7 +11,6 @@ import org.joda.time.LocalDateTime;
 @Table(
    name = "tbl_activity_log"
 )
-@XmlRootElement
 public class ActivityLog extends BaseObject {
    private static final long serialVersionUID = 1L;
    @Column(
@@ -32,9 +30,6 @@ public class ActivityLog extends BaseObject {
    @Column(
       name = "log_date",
       nullable = true
-   )
-   @Type(
-      type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime"
    )
    private LocalDateTime logDate;
    @Column(

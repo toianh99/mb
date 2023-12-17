@@ -1,6 +1,6 @@
-package com.globits.security.repository;
+package com.xat.core.security.repository;
 
-import com.globits.security.domain.UserGroup;
+import com.xat.core.security.domain.UserGroup;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

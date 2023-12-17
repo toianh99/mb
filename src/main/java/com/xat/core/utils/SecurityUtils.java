@@ -1,7 +1,7 @@
 package com.xat.core.utils;
 
-import com.globits.security.domain.Role;
-import com.globits.security.domain.User;
+import com.xat.core.security.domain.Role;
+import com.xat.core.security.domain.User;
 import java.util.Iterator;
 import java.util.Set;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;

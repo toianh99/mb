@@ -1,10 +1,10 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.Location;
-import com.globits.core.dto.LocationDto;
-import com.globits.core.dto.ResultMessageDto;
-import com.globits.core.repository.LocationRepository;
-import com.globits.core.service.LocationService;
+import com.xat.core.domain.Location;
+import com.xat.core.dto.LocationDto;
+import com.xat.core.dto.ResultMessageDto;
+import com.xat.core.repository.LocationRepository;
+import com.xat.core.service.LocationService;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

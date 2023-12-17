@@ -1,10 +1,10 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.FileDescription;
-import com.globits.core.dto.CommonSearchDto;
-import com.globits.core.dto.FileDescriptionDto;
-import com.globits.core.repository.FileDescriptionRepository;
-import com.globits.core.service.FileDescriptionService;
+import com.xat.core.domain.FileDescription;
+import com.xat.core.dto.CommonSearchDto;
+import com.xat.core.dto.FileDescriptionDto;
+import com.xat.core.repository.FileDescriptionRepository;
+import com.xat.core.service.FileDescriptionService;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

@@ -1,8 +1,9 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Organization;
-import com.globits.core.domain.OrganizationUser;
-import com.globits.security.dto.UserDto;
+import com.xat.core.domain.Organization;
+import com.xat.core.domain.OrganizationUser;
+import com.xat.core.security.dto.UserDto;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

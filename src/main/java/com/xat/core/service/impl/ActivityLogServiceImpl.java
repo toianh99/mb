@@ -1,11 +1,11 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.ActivityLog;
-import com.globits.core.domain.BaseObject;
-import com.globits.core.dto.ActivityLogDto;
-import com.globits.core.repository.ActivityLogRepository;
-import com.globits.core.service.ActivityLogService;
-import com.globits.core.utils.SerializableUtil;
+import com.xat.core.domain.ActivityLog;
+import com.xat.core.domain.BaseObject;
+import com.xat.core.dto.ActivityLogDto;
+import com.xat.core.repository.ActivityLogRepository;
+import com.xat.core.service.ActivityLogService;
+import com.xat.core.utils.SerializableUtil;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.UUID;

@@ -1,17 +1,11 @@
 package com.xat.core.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.*;
 
 @Entity
 @Table(
    name = "tbl_building"
 )
-@XmlRootElement
 public class Building extends BaseObject {
    private static final long serialVersionUID = 8191591866881769867L;
    @Column(
@@ -22,6 +16,7 @@ public class Building extends BaseObject {
       name = "code"
    )
    private String code;
+   @Transient
    private Location location;
    @ManyToOne
    @JoinColumn(

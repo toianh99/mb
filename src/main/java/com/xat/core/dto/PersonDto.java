@@ -1,7 +1,8 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Person;
-import com.globits.core.domain.PersonAddress;
+import com.xat.core.domain.Person;
+import com.xat.core.domain.PersonAddress;
+
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -360,9 +361,9 @@ public class PersonDto extends BaseObjectDto {
          this.shortName = p.getShortName();
          this.imagePath = p.getImagePath();
          this.phoneNumber = p.getPhoneNumber();
-         if (p.getUser() != null) {
-            this.userId = p.getUser().getId();
-         }
+//         if (p.getUser() != null) {
+//            this.userId = p.getUser().getId();
+//         }
 
          if (p.getAddress() != null) {
             Set<PersonAddressDto> address = new HashSet();
@@ -429,9 +430,9 @@ public class PersonDto extends BaseObjectDto {
          this.shortName = p.getShortName();
          this.imagePath = p.getImagePath();
          this.phoneNumber = p.getPhoneNumber();
-         if (p.getUser() != null) {
-            this.userId = p.getUser().getId();
-         }
+//         if (p.getUser() != null) {
+//            this.userId = p.getUser().getId();
+//         }
 
          if (!simple) {
             if (p.getAddress() != null) {

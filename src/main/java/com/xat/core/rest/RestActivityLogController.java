@@ -1,10 +1,10 @@
 package com.xat.core.rest;
 
-import com.globits.core.dto.ActivityLogDto;
-import com.globits.core.service.ActivityLogService;
+import com.xat.core.dto.ActivityLogDto;
+import com.xat.core.service.ActivityLogService;
 import java.util.UUID;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.security.access.annotation.Secured;

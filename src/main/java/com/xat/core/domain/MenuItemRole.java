@@ -1,17 +1,15 @@
 package com.xat.core.domain;
 
-import com.globits.security.domain.Role;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.xat.core.security.domain.Role;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(
    name = "tbl_menu_item_role"
 )
-@XmlRootElement
 public class MenuItemRole extends BaseObject {
    private static final long serialVersionUID = 1L;
    @ManyToOne

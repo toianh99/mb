@@ -1,16 +1,14 @@
 package com.xat.core.domain;
 
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(
    name = "tbl_fiscal_year"
 )
-@XmlRootElement
 public class FiscalYear extends BaseObject {
    private static final long serialVersionUID = 1L;
    @Column(

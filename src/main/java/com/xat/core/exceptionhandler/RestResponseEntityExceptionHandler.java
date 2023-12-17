@@ -1,7 +1,7 @@
 package com.xat.core.exceptionhandler;
 
 import java.util.Locale;
-import javax.persistence.EntityNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.dao.DataAccessException;

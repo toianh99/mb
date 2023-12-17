@@ -1,7 +1,7 @@
 package com.xat.core.repository;
 
-import com.globits.core.domain.Location;
-import com.globits.core.dto.LocationDto;
+import com.xat.core.domain.Location;
+import com.xat.core.dto.LocationDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;
@@ -15,6 +15,6 @@ public interface LocationRepository extends JpaRepository<Location, UUID> {
    @Query("select l from Location l where l.code = ?1")
    List<Location> findByCode(String code);
 
-   @Query("select new com.globits.core.dto.LocationDto(e,true) from Location e")
+   @Query("select new com.xat.core.dto.LocationDto(e,true) from Location e")
    Page<LocationDto> getByPage(Pageable pageable);
 }

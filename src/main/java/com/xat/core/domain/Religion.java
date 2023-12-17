@@ -1,15 +1,13 @@
 package com.xat.core.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(
    name = "tbl_religion"
 )
-@XmlRootElement
 public class Religion extends BaseObject {
    private static final long serialVersionUID = 6159909161433854890L;
    @Column(

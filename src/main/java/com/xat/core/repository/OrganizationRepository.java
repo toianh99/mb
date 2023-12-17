@@ -1,7 +1,7 @@
 package com.xat.core.repository;
 
-import com.globits.core.domain.Organization;
-import com.globits.core.dto.OrganizationDto;
+import com.xat.core.domain.Organization;
+import com.xat.core.dto.OrganizationDto;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -22,12 +22,12 @@ public interface OrganizationRepository extends JpaRepository<Organization, UUID
    @Query("select d from Organization d where d.parent=null")
    List<Organization> getListOrganizationByTree();
 
-   @Query("select new com.globits.core.dto.OrganizationDto(r,true) from Organization r")
+   @Query("select new com.xat.core.dto.OrganizationDto(r,true) from Organization r")
    Page<OrganizationDto> getBasicInfoByPage(Pageable pageable);
 
-   @Query("select new com.globits.core.dto.OrganizationDto(r,false) from Organization r where r.parent is null")
+   @Query("select new com.xat.core.dto.OrganizationDto(r,false) from Organization r where r.parent is null")
    Page<OrganizationDto> getFullInfoByPage(Pageable pageable);
 
-   @Query("select new com.globits.core.dto.OrganizationDto(r,false) from Organization r where r.parent is null and (r.name like ?1)")
+   @Query("select new com.xat.core.dto.OrganizationDto(r,false) from Organization r where r.parent is null and (r.name like ?1)")
    Page<OrganizationDto> searchFullInfoByPage(String keyword, Pageable pageable);
 }

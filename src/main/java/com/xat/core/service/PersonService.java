@@ -1,6 +1,6 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Person;
+import com.xat.core.domain.Person;
 import java.util.UUID;
 import org.springframework.data.domain.Page;
 

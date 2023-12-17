@@ -1,9 +1,9 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Department;
-import com.globits.core.dto.DepartmentDto;
-import com.globits.core.dto.DepartmentSearchDto;
-import com.globits.core.dto.DepartmentTreeDto;
+import com.xat.core.domain.Department;
+import com.xat.core.dto.DepartmentDto;
+import com.xat.core.dto.DepartmentSearchDto;
+import com.xat.core.dto.DepartmentTreeDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;

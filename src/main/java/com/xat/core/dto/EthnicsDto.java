@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Ethnics;
+import com.xat.core.domain.Ethnics;
+
 import java.util.UUID;
 
 public class EthnicsDto {

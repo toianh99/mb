@@ -1,7 +1,7 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Ethnics;
-import com.globits.core.dto.EthnicsDto;
+import com.xat.core.domain.Ethnics;
+import com.xat.core.dto.EthnicsDto;
 import java.util.List;
 import java.util.UUID;
 

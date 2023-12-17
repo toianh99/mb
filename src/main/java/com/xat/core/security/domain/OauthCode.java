@@ -1,6 +1,6 @@
-package com.globits.security.domain;
+package com.xat.core.security.domain;
 
-import javax.persistence.Column;
+import jakarta.persistence.Column;
 
 public class OauthCode {
    private String code;

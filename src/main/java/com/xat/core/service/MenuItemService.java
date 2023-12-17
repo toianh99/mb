@@ -1,9 +1,9 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.MenuItem;
-import com.globits.core.dto.CommonSearchObjectDto;
-import com.globits.core.dto.MenuItemDto;
-import com.globits.core.dto.ResultMessageDto;
+import com.xat.core.domain.MenuItem;
+import com.xat.core.dto.CommonSearchObjectDto;
+import com.xat.core.dto.MenuItemDto;
+import com.xat.core.dto.ResultMessageDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;

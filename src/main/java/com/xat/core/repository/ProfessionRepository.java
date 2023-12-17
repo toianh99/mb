@@ -1,6 +1,6 @@
 package com.xat.core.repository;
 
-import com.globits.core.domain.Profession;
+import com.xat.core.domain.Profession;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;

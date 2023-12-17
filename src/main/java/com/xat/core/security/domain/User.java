@@ -1,28 +1,28 @@
-package com.globits.security.domain;
+package com.xat.core.security.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.globits.core.auditing.AuditableEntity;
-import com.globits.core.domain.Organization;
-import com.globits.core.domain.Person;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-import javax.xml.bind.annotation.XmlRootElement;
+
+import com.xat.core.auditing.AuditableEntity;
+import com.xat.core.domain.Organization;
+import com.xat.core.domain.Person;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 import org.springframework.security.core.GrantedAuthority;
@@ -32,7 +32,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Table(
    name = "tbl_user"
 )
-@XmlRootElement
 public class User extends AuditableEntity implements UserDetails {
    private static final long serialVersionUID = 4572941405687566992L;
    @Id
@@ -363,7 +362,7 @@ public class User extends AuditableEntity implements UserDetails {
          this.person.setCarrer(user.getPerson().getCarrer());
          this.person.setGender(user.getPerson().getGender());
          this.person.setEmail(user.getPerson().getEmail());
-         this.person.setUser(user);
+//         this.person.setUser(user);
       }
 
    }

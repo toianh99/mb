@@ -1,7 +1,7 @@
-package com.globits.security.rest;
+package com.xat.core.security.rest;
 
-import com.globits.security.dto.UserGroupDto;
-import com.globits.security.service.UserGroupService;
+import com.xat.core.security.dto.UserGroupDto;
+import com.xat.core.security.service.UserGroupService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

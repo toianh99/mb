@@ -1,6 +1,6 @@
 package com.xat.core.repository;
 
-import com.globits.core.domain.MenuItemRole;
+import com.xat.core.domain.MenuItemRole;
 import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

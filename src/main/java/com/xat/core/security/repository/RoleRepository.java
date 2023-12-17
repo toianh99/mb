@@ -1,6 +1,6 @@
-package com.globits.security.repository;
+package com.xat.core.security.repository;
 
-import com.globits.security.domain.Role;
+import com.xat.core.security.domain.Role;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

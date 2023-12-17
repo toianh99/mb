@@ -1,8 +1,8 @@
-package com.globits.security.service;
+package com.xat.core.security.service;
 
-import com.globits.core.service.GenericService;
-import com.globits.security.domain.Role;
-import com.globits.security.dto.RoleDto;
+import com.xat.core.service.GenericService;
+import com.xat.core.security.domain.Role;
+import com.xat.core.security.dto.RoleDto;
 import java.util.List;
 
 public interface RoleService extends GenericService<Role, Long> {

@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Location;
+import com.xat.core.domain.Location;
+
 import java.util.UUID;
 
 public class LocationDto {

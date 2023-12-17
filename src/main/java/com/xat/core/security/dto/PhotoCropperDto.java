@@ -1,4 +1,4 @@
-package com.globits.security.dto;
+package com.xat.core.security.dto;
 
 public class PhotoCropperDto {
    private UserDto user;

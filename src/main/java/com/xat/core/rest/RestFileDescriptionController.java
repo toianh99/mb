@@ -1,16 +1,16 @@
 package com.xat.core.rest;
 
-import com.globits.core.Constants;
-import com.globits.core.domain.FileDescription;
-import com.globits.core.dto.FileDescriptionDto;
-import com.globits.core.service.FileDescriptionService;
+import com.xat.core.Constants;
+import com.xat.core.domain.FileDescription;
+import com.xat.core.dto.FileDescriptionDto;
+import com.xat.core.service.FileDescriptionService;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.UUID;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

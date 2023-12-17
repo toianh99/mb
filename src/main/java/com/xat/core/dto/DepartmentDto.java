@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Department;
+import com.xat.core.domain.Department;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;

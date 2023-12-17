@@ -1,11 +1,10 @@
 package com.xat.core.auditing;
 
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.EntityListeners;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Transient;
-import org.hibernate.annotations.Type;
+import jakarta.persistence.Column;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.Transient;
 import org.joda.time.LocalDateTime;
 
 @MappedSuperclass
@@ -17,9 +16,7 @@ public class AuditableEntity implements Serializable {
       name = "create_date",
       nullable = false
    )
-   @Type(
-      type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime"
-   )
+
    private LocalDateTime createDate;
    @Column(
       name = "created_by",
@@ -31,9 +28,7 @@ public class AuditableEntity implements Serializable {
       name = "modify_date",
       nullable = true
    )
-   @Type(
-      type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime"
-   )
+
    private LocalDateTime modifyDate;
    @Column(
       name = "modified_by",

@@ -1,7 +1,8 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.MenuItemRole;
-import com.globits.security.dto.RoleDto;
+
+import com.xat.core.domain.MenuItemRole;
+import com.xat.core.security.dto.RoleDto;
 
 public class MenuItemRoleDto extends BaseObjectDto {
    private MenuItemDto menuItem;

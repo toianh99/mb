@@ -1,10 +1,10 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.AdministrativeUnit;
-import com.globits.core.dto.AdministrativeUnitDto;
-import com.globits.core.repository.AdministrativeUnitRepository;
-import com.globits.core.service.AdministrativeUnitService;
-import com.globits.security.domain.User;
+import com.xat.core.domain.AdministrativeUnit;
+import com.xat.core.dto.AdministrativeUnitDto;
+import com.xat.core.repository.AdministrativeUnitRepository;
+import com.xat.core.service.AdministrativeUnitService;
+import com.xat.core.security.domain.User;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -60,8 +60,7 @@ public class AdministrativeUnitServiceImpl extends GenericServiceImpl<Administra
          pageSize = retList.size();
       }
 
-      Page<AdministrativeUnit> page = new PageImpl(retList, pageable, (long)pageSize);
-      return page;
+      return (Page<AdministrativeUnit>) new PageImpl(retList, pageable, (long)pageSize);
    }
 
    public Page<AdministrativeUnit> getPageRootAdministrativeUnit(int pageIndex, int pageSize) {

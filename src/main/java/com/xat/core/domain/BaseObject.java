@@ -1,19 +1,17 @@
 package com.xat.core.domain;
 
-import com.globits.core.auditing.AuditableEntity;
 import java.util.UUID;
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+
+import com.xat.core.auditing.AuditableEntity;
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
 import org.hibernate.annotations.Type;
 
 @MappedSuperclass
 public class BaseObject extends AuditableEntity {
    private static final long serialVersionUID = 1L;
    @Id
-   @Type(
-      type = "uuid-char"
-   )
    @Column(
       name = "id",
       unique = true,
@@ -24,9 +22,6 @@ public class BaseObject extends AuditableEntity {
    @Column(
       name = "uuid_key",
       nullable = true
-   )
-   @Type(
-      type = "uuid-char"
    )
    private UUID uuidKey;
    @Column(

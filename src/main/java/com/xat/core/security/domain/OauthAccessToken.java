@@ -1,7 +1,7 @@
-package com.globits.security.domain;
+package com.xat.core.security.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
 
 public class OauthAccessToken {
    @Column(

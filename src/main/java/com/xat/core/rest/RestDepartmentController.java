@@ -1,12 +1,12 @@
 package com.xat.core.rest;
 
-import com.globits.core.domain.Department;
-import com.globits.core.dto.DepartmentDto;
-import com.globits.core.service.DepartmentService;
+import com.xat.core.domain.Department;
+import com.xat.core.dto.DepartmentDto;
+import com.xat.core.service.DepartmentService;
 import java.util.List;
 import java.util.UUID;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

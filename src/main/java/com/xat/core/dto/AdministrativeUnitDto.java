@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.AdministrativeUnit;
+import com.xat.core.domain.AdministrativeUnit;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

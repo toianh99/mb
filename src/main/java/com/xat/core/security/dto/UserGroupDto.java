@@ -1,7 +1,7 @@
-package com.globits.security.dto;
+package com.xat.core.security.dto;
 
-import com.globits.core.dto.AuditableEntityDto;
-import com.globits.security.domain.UserGroup;
+import com.xat.core.dto.AuditableEntityDto;
+import com.xat.core.security.domain.UserGroup;
 
 public class UserGroupDto extends AuditableEntityDto {
    private Long id;

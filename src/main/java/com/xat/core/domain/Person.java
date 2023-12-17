@@ -1,24 +1,24 @@
 package com.xat.core.domain;
 
-import com.globits.security.domain.User;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.UUID;
-import javax.persistence.Basic;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-import javax.xml.bind.annotation.XmlRootElement;
+
+import com.xat.core.security.domain.User;
+import jakarta.persistence.Basic;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(
@@ -27,7 +27,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Inheritance(
    strategy = InheritanceType.JOINED
 )
-@XmlRootElement
 public class Person extends BaseObject {
    @Transient
    private static final long serialVersionUID = 1216825583672377485L;
@@ -169,11 +168,11 @@ public class Person extends BaseObject {
       optional = true,
       fetch = FetchType.LAZY
    )
-   @JoinColumn(
-      name = "user_id",
-      unique = false
-   )
-   protected User user;
+//   @JoinColumn(
+//      name = "user_id",
+//      unique = false
+//   )
+//   protected User user;
    @Basic(
       fetch = FetchType.LAZY
    )
@@ -260,13 +259,13 @@ public class Person extends BaseObject {
       this.gender = gender;
    }
 
-   public User getUser() {
-      return this.user;
-   }
-
-   public void setUser(User user) {
-      this.user = user;
-   }
+//   public User getUser() {
+//      return this.user;
+//   }
+//
+//   public void setUser(User user) {
+//      this.user = user;
+//   }
 
    public byte[] getPhoto() {
       return this.photo;
@@ -495,9 +494,9 @@ public class Person extends BaseObject {
       this.phoneNumber = person.getPhoneNumber();
       this.idNumberIssueBy = person.getIdNumberIssueBy();
       this.religion = person.getReligion();
-      if (person.getUser() != null) {
-         this.user = new User(person.getUser(), false);
-      }
+//      if (person.getUser() != null) {
+//         this.user = new User(person.getUser(), false);
+//      }
 
       this.carrer = person.getCarrer();
       if (person.getMaritalStatus() != null) {

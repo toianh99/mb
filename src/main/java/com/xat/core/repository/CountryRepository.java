@@ -1,7 +1,7 @@
 package com.xat.core.repository;
 
-import com.globits.core.domain.Country;
-import com.globits.core.dto.CountryDto;
+import com.xat.core.domain.Country;
+import com.xat.core.dto.CountryDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;
@@ -18,6 +18,6 @@ public interface CountryRepository extends JpaRepository<Country, UUID> {
    @Query("select e from Country e   where  e.code=?1")
    List<Country> findListByCode(String code);
 
-   @Query("select new com.globits.core.dto.CountryDto(e,true) from Country e")
+   @Query("select new com.xat.core.dto.CountryDto(e,true) from Country e")
    Page<CountryDto> getByPage(Pageable pageable);
 }

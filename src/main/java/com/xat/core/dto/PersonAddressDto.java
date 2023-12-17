@@ -1,6 +1,6 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.PersonAddress;
+import com.xat.core.domain.PersonAddress;
 import java.util.UUID;
 
 public class PersonAddressDto {

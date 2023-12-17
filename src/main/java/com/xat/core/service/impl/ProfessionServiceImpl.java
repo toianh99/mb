@@ -1,9 +1,9 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.Profession;
-import com.globits.core.dto.ProfessionDto;
-import com.globits.core.repository.ProfessionRepository;
-import com.globits.core.service.ProfessionService;
+import com.xat.core.domain.Profession;
+import com.xat.core.dto.ProfessionDto;
+import com.xat.core.repository.ProfessionRepository;
+import com.xat.core.service.ProfessionService;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;

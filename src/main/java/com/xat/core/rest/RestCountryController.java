@@ -1,12 +1,12 @@
 package com.xat.core.rest;
 
-import com.globits.core.domain.Country;
-import com.globits.core.dto.CountryDto;
-import com.globits.core.dto.ResultMessageDto;
-import com.globits.core.service.CountryService;
+import com.xat.core.domain.Country;
+import com.xat.core.dto.CountryDto;
+import com.xat.core.dto.ResultMessageDto;
+import com.xat.core.service.CountryService;
 import java.util.UUID;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

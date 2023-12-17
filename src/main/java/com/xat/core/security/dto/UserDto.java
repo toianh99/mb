@@ -1,11 +1,12 @@
-package com.globits.security.dto;
+package com.xat.core.security.dto;
 
-import com.globits.core.dto.AuditableEntityDto;
-import com.globits.core.dto.OrganizationDto;
-import com.globits.core.dto.PersonDto;
-import com.globits.security.domain.Role;
-import com.globits.security.domain.User;
-import com.globits.security.domain.UserGroup;
+import com.xat.core.dto.AuditableEntityDto;
+import com.xat.core.dto.OrganizationDto;
+import com.xat.core.dto.PersonDto;
+import com.xat.core.security.domain.Role;
+import com.xat.core.security.domain.User;
+import com.xat.core.security.domain.UserGroup;
+
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -49,8 +50,8 @@ public class UserDto extends AuditableEntityDto {
    }
 
    public UserDto() {
-      this.roles = new HashSet();
-      this.groups = new HashSet();
+      this.roles = new HashSet<>();
+      this.groups = new HashSet<>();
    }
 
    public UserDto(User entity) {
@@ -58,8 +59,8 @@ public class UserDto extends AuditableEntityDto {
    }
 
    public UserDto(User entity, Boolean isGetFull) {
-      this.roles = new HashSet();
-      this.groups = new HashSet();
+      this.roles = new HashSet<>();
+      this.groups = new HashSet<>();
       if (entity != null) {
          this.id = entity.getId();
          this.displayName = "";

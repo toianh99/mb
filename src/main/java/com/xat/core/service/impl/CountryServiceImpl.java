@@ -1,10 +1,10 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.Country;
-import com.globits.core.dto.CountryDto;
-import com.globits.core.dto.ResultMessageDto;
-import com.globits.core.repository.CountryRepository;
-import com.globits.core.service.CountryService;
+import com.xat.core.domain.Country;
+import com.xat.core.dto.CountryDto;
+import com.xat.core.dto.ResultMessageDto;
+import com.xat.core.repository.CountryRepository;
+import com.xat.core.service.CountryService;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;

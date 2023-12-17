@@ -1,11 +1,11 @@
 package com.xat.core.rest;
 
-import com.globits.core.domain.Religion;
-import com.globits.core.dto.ReligionDto;
-import com.globits.core.service.ReligionService;
+import com.xat.core.domain.Religion;
+import com.xat.core.dto.ReligionDto;
+import com.xat.core.service.ReligionService;
 import java.util.UUID;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.security.access.annotation.Secured;

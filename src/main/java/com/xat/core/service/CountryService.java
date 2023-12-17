@@ -1,8 +1,8 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Country;
-import com.globits.core.dto.CountryDto;
-import com.globits.core.dto.ResultMessageDto;
+import com.xat.core.domain.Country;
+import com.xat.core.dto.CountryDto;
+import com.xat.core.dto.ResultMessageDto;
 import java.util.UUID;
 import org.springframework.data.domain.Page;
 

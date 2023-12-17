@@ -1,13 +1,13 @@
 package com.xat.core.rest;
 
-import com.globits.core.domain.Location;
-import com.globits.core.dto.LocationDto;
-import com.globits.core.dto.ResultMessageDto;
-import com.globits.core.service.LocationService;
+import com.xat.core.domain.Location;
+import com.xat.core.dto.LocationDto;
+import com.xat.core.dto.ResultMessageDto;
+import com.xat.core.service.LocationService;
 import java.util.List;
 import java.util.UUID;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

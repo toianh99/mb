@@ -1,6 +1,6 @@
-package com.globits.security.dto;
+package com.xat.core.security.dto;
 
-import com.globits.security.domain.Role;
+import com.xat.core.security.domain.Role;
 import java.io.Serializable;
 
 public class RoleDto implements Serializable {

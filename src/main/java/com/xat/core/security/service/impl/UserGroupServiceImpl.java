@@ -1,10 +1,10 @@
-package com.globits.security.service.impl;
+package com.xat.core.security.service.impl;
 
-import com.globits.core.utils.CommonUtils;
-import com.globits.security.domain.UserGroup;
-import com.globits.security.dto.UserGroupDto;
-import com.globits.security.repository.UserGroupRepository;
-import com.globits.security.service.UserGroupService;
+import com.xat.core.utils.CommonUtils;
+import com.xat.core.security.domain.UserGroup;
+import com.xat.core.security.dto.UserGroupDto;
+import com.xat.core.security.repository.UserGroupRepository;
+import com.xat.core.security.service.UserGroupService;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

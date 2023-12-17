@@ -1,18 +1,16 @@
-package com.globits.security.domain;
+package com.xat.core.security.domain;
 
-import com.globits.core.auditing.AuditableEntity;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.xat.core.auditing.AuditableEntity;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
+import jakarta.validation.constraints.Size;
 import org.springframework.security.core.GrantedAuthority;
 
-@XmlRootElement
 @Table(
    name = "tbl_role"
 )

@@ -1,14 +1,14 @@
 package com.xat.core.rest;
 
-import com.globits.core.domain.Organization;
-import com.globits.core.dto.OrganizationDto;
-import com.globits.core.dto.OrganizationUserDto;
-import com.globits.core.dto.ResultMessageDto;
-import com.globits.core.dto.SimpleSearchModelDto;
-import com.globits.core.service.OrganizationService;
+import com.xat.core.domain.Organization;
+import com.xat.core.dto.OrganizationDto;
+import com.xat.core.dto.OrganizationUserDto;
+import com.xat.core.dto.ResultMessageDto;
+import com.xat.core.dto.SimpleSearchModelDto;
+import com.xat.core.service.OrganizationService;
 import java.util.UUID;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Profession;
-import com.globits.core.dto.ProfessionDto;
+import com.xat.core.domain.Profession;
+import com.xat.core.dto.ProfessionDto;
 import java.util.UUID;
 
 public interface ProfessionService extends GenericService<Profession, UUID> {

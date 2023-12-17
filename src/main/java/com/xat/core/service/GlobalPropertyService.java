@@ -1,7 +1,7 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.GlobalProperty;
-import com.globits.core.dto.GlobalPropertyDto;
+import com.xat.core.domain.GlobalProperty;
+import com.xat.core.dto.GlobalPropertyDto;
 import org.springframework.data.domain.Page;
 
 public interface GlobalPropertyService {

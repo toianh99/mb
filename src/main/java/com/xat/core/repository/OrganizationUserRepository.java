@@ -1,7 +1,7 @@
 package com.xat.core.repository;
 
-import com.globits.core.domain.Organization;
-import com.globits.core.domain.OrganizationUser;
+import com.xat.core.domain.Organization;
+import com.xat.core.domain.OrganizationUser;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;

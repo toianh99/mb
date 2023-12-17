@@ -1,4 +1,4 @@
-package com.globits.security.exception;
+package com.xat.core.security.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

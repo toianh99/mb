@@ -1,6 +1,6 @@
-package com.globits.security.service;
+package com.xat.core.security.service;
 
-import com.globits.security.dto.UserGroupDto;
+import com.xat.core.security.dto.UserGroupDto;
 import java.util.List;
 import org.springframework.data.domain.Page;
 

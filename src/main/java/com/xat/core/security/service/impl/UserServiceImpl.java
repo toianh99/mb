@@ -1,30 +1,30 @@
-package com.globits.security.service.impl;
+package com.xat.core.security.service.impl;
 
-import com.globits.core.Constants;
-import com.globits.core.domain.Ethnics;
-import com.globits.core.domain.Organization;
-import com.globits.core.domain.Person;
-import com.globits.core.dto.ActivityLogDto;
-import com.globits.core.dto.PersonDto;
-import com.globits.core.repository.EthnicsRepository;
-import com.globits.core.repository.OrganizationRepository;
-import com.globits.core.repository.PersonRepository;
-import com.globits.core.service.ActivityLogService;
-import com.globits.core.service.impl.GenericServiceImpl;
-import com.globits.core.utils.CommonUtils;
-import com.globits.core.utils.SecurityUtils;
-import com.globits.core.utils.SerializableUtil;
-import com.globits.security.domain.Role;
-import com.globits.security.domain.User;
-import com.globits.security.domain.UserGroup;
-import com.globits.security.dto.RoleDto;
-import com.globits.security.dto.UserDto;
-import com.globits.security.dto.UserFilterDto;
-import com.globits.security.dto.UserGroupDto;
-import com.globits.security.repository.RoleRepository;
-import com.globits.security.repository.UserGroupRepository;
-import com.globits.security.repository.UserRepository;
-import com.globits.security.service.UserService;
+import com.xat.core.Constants;
+import com.xat.core.domain.Ethnics;
+import com.xat.core.domain.Organization;
+import com.xat.core.domain.Person;
+import com.xat.core.dto.ActivityLogDto;
+import com.xat.core.dto.PersonDto;
+import com.xat.core.repository.EthnicsRepository;
+import com.xat.core.repository.OrganizationRepository;
+import com.xat.core.repository.PersonRepository;
+import com.xat.core.service.ActivityLogService;
+import com.xat.core.service.impl.GenericServiceImpl;
+import com.xat.core.utils.CommonUtils;
+import com.xat.core.utils.SecurityUtils;
+import com.xat.core.utils.SerializableUtil;
+import com.xat.core.security.domain.Role;
+import com.xat.core.security.domain.User;
+import com.xat.core.security.domain.UserGroup;
+import com.xat.core.security.dto.RoleDto;
+import com.xat.core.security.dto.UserDto;
+import com.xat.core.security.dto.UserFilterDto;
+import com.xat.core.security.dto.UserGroupDto;
+import com.xat.core.security.repository.RoleRepository;
+import com.xat.core.security.repository.UserGroupRepository;
+import com.xat.core.security.repository.UserRepository;
+import com.xat.core.security.service.UserService;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -35,8 +35,8 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
+import jakarta.persistence.Query;
+import jakarta.persistence.TypedQuery;
 import org.joda.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -472,7 +472,7 @@ public class UserServiceImpl extends GenericServiceImpl<User, Long> implements U
 
          if (person != null) {
             user.setPerson(person);
-            person.setUser(user);
+//            person.setUser(user);
          }
 
          if (userDto.getActive() != null) {
@@ -589,7 +589,7 @@ public class UserServiceImpl extends GenericServiceImpl<User, Long> implements U
 
          user.setPerson(person);
          if (person != null) {
-            person.setUser(user);
+//            person.setUser(user);
          }
 
          user.setActive(userDto.getActive());
@@ -637,7 +637,7 @@ public class UserServiceImpl extends GenericServiceImpl<User, Long> implements U
 
             person.setPhoto(dto.getPerson().getPhoto());
             person.setPhotoCropped(dto.getPerson().getPhotoCropped());
-            person.setUser(user);
+//            person.setUser(user);
             user.setPerson(person);
             ActivityLogDto activityLog = new ActivityLogDto();
             activityLog.setContentLog("Update user photo:" + user.getUsername());
@@ -659,7 +659,7 @@ public class UserServiceImpl extends GenericServiceImpl<User, Long> implements U
    public boolean passwordMatch(UserDto dto) {
       if (dto != null && CommonUtils.isPositive(dto.getId(), true)) {
          User user = (User)this.userRepository.getOne(dto.getId());
-         return user != null ? SecurityUtils.passwordsMatch(user.getPassword(), dto.getPassword()) : false;
+         return user != null && SecurityUtils.passwordsMatch(user.getPassword(), dto.getPassword());
       } else {
          return false;
       }

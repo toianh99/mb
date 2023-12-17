@@ -1,8 +1,8 @@
 package com.xat.core.dto;
+import com.xat.core.domain.MenuItem;
+import com.xat.core.domain.MenuItemRole;
+import com.xat.core.security.dto.RoleDto;
 
-import com.globits.core.domain.MenuItem;
-import com.globits.core.domain.MenuItemRole;
-import com.globits.security.dto.RoleDto;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

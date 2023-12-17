@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Religion;
+import com.xat.core.domain.Religion;
+
 import java.util.UUID;
 
 public class ReligionDto {

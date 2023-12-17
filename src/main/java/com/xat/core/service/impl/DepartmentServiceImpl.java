@@ -1,18 +1,18 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.Department;
-import com.globits.core.dto.DepartmentDto;
-import com.globits.core.dto.DepartmentSearchDto;
-import com.globits.core.dto.DepartmentTreeDto;
-import com.globits.core.repository.DepartmentRepository;
-import com.globits.core.service.DepartmentService;
+import com.xat.core.domain.Department;
+import com.xat.core.dto.DepartmentDto;
+import com.xat.core.dto.DepartmentSearchDto;
+import com.xat.core.dto.DepartmentTreeDto;
+import com.xat.core.repository.DepartmentRepository;
+import com.xat.core.service.DepartmentService;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
+import jakarta.persistence.Query;
+import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -273,7 +273,7 @@ public class DepartmentServiceImpl extends GenericServiceImpl<Department, UUID> 
    }
 
    public Page<DepartmentDto> searchDepartment(DepartmentSearchDto dto, int pageSize, int pageIndex) {
-      String sql = "select new com.globits.core.dto.DepartmentDto(d) from Department d where (1=1)";
+      String sql = "select new com.xat.core.dto.DepartmentDto(d) from Department d where (1=1)";
       String sqlCount = "select count(d.id) from Department d where (1=1)";
       if (dto.getCode() != null) {
          sql = sql + " and d.code like :code";

@@ -1,6 +1,6 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.GlobalProperty;
+import com.xat.core.domain.GlobalProperty;
 
 public class GlobalPropertyDto {
    private String property;

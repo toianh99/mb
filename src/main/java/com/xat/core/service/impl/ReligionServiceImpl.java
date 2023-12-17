@@ -1,9 +1,9 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.Religion;
-import com.globits.core.dto.ReligionDto;
-import com.globits.core.repository.ReligionRepository;
-import com.globits.core.service.ReligionService;
+import com.xat.core.domain.Religion;
+import com.xat.core.dto.ReligionDto;
+import com.xat.core.repository.ReligionRepository;
+import com.xat.core.service.ReligionService;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;

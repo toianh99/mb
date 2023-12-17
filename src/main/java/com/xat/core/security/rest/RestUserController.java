@@ -1,27 +1,28 @@
-package com.globits.security.rest;
+package com.xat.core.security.rest;
 
-import com.globits.core.Constants;
-import com.globits.core.domain.FileDescription;
-import com.globits.core.dto.PersonDto;
-import com.globits.core.service.FileDescriptionService;
-import com.globits.core.utils.CommonUtils;
-import com.globits.core.utils.FileUtils;
-import com.globits.core.utils.ImageUtils;
-import com.globits.core.utils.SecurityUtils;
-import com.globits.security.domain.User;
-import com.globits.security.dto.PasswordChangeDto;
-import com.globits.security.dto.PhotoCropperDto;
-import com.globits.security.dto.UserDto;
-import com.globits.security.dto.UserFilterDto;
-import com.globits.security.service.UserService;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.UUID;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletResponse;
+
+import com.xat.core.Constants;
+import com.xat.core.domain.FileDescription;
+import com.xat.core.dto.PersonDto;
+import com.xat.core.security.domain.User;
+import com.xat.core.security.dto.PasswordChangeDto;
+import com.xat.core.security.dto.PhotoCropperDto;
+import com.xat.core.security.dto.UserDto;
+import com.xat.core.security.dto.UserFilterDto;
+import com.xat.core.security.service.UserService;
+import com.xat.core.service.FileDescriptionService;
+import com.xat.core.utils.CommonUtils;
+import com.xat.core.utils.FileUtils;
+import com.xat.core.utils.ImageUtils;
+import com.xat.core.utils.SecurityUtils;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletResponse;
 import org.joda.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -73,7 +74,7 @@ public class RestUserController {
    @PreAuthorize("isAuthenticated()")
    @GetMapping({"/api/users/{userId}"})
    public UserDto getUser(@PathVariable("userId") String userId) {
-      return this.userService.findByUserId(new Long(userId));
+      return this.userService.findByUserId(Long.valueOf(userId));
    }
 
    @PreAuthorize("hasRole('ROLE_ADMIN')")
@@ -92,7 +93,7 @@ public class RestUserController {
    @PostMapping(
       path = {"/api/users/search/{pageIndex}/{pageSize}"}
    )
-   public ResponseEntity<Page<UserDto>> searchUsers(@RequestBody UserFilterDto filter, @PathVariable("pageIndex") int pageIndex, @PathVariable("pageSize") int pageSize) {
+   public ResponseEntity searchUsers(@RequestBody UserFilterDto filter, @PathVariable("pageIndex") int pageIndex, @PathVariable("pageSize") int pageSize) {
       return filter == null ? new ResponseEntity(new PageImpl(new ArrayList(), PageRequest.of(pageIndex, pageSize), 0L), HttpStatus.BAD_REQUEST) : new ResponseEntity(this.userService.findAllPageable(filter, pageIndex, pageSize), HttpStatus.OK);
    }
 
@@ -127,7 +128,7 @@ public class RestUserController {
    @PreAuthorize("hasRole('ROLE_ADMIN')")
    @DeleteMapping({"/api/users/{userId}"})
    public UserDto removeUser(@PathVariable("userId") String userId) {
-      return this.userService.deleteById(new Long(userId));
+      return this.userService.deleteById(Long.valueOf(userId));
    }
 
    @PreAuthorize("hasRole('ROLE_ADMIN')")
@@ -135,7 +136,7 @@ public class RestUserController {
    public ResponseEntity<UserDto> removeUser(@RequestBody UserDto dto) {
       if (dto != null && dto.getId() != null) {
          Long userId = dto.getId();
-         dto = this.userService.deleteById(new Long(userId));
+         dto = this.userService.deleteById(Long.valueOf(userId));
          return new ResponseEntity(dto, HttpStatus.OK);
       } else {
          return new ResponseEntity(new UserDto(), HttpStatus.BAD_REQUEST);

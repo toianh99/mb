@@ -1,6 +1,6 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.FileDescription;
+import com.xat.core.domain.FileDescription;
 
 public class FileDescriptionDto extends BaseObjectDto {
    private String contentType;

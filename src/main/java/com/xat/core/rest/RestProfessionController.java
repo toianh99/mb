@@ -1,11 +1,11 @@
 package com.xat.core.rest;
 
-import com.globits.core.domain.Profession;
-import com.globits.core.dto.ProfessionDto;
-import com.globits.core.service.ProfessionService;
+import com.xat.core.domain.Profession;
+import com.xat.core.dto.ProfessionDto;
+import com.xat.core.service.ProfessionService;
 import java.util.UUID;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.security.access.annotation.Secured;

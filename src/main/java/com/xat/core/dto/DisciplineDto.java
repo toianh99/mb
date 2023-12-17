@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Discipline;
+import com.xat.core.domain.Discipline;
+
 import java.util.UUID;
 
 public class DisciplineDto {

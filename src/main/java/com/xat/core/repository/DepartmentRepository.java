@@ -1,7 +1,7 @@
 package com.xat.core.repository;
 
-import com.globits.core.domain.Department;
-import com.globits.core.dto.DepartmentDto;
+import com.xat.core.domain.Department;
+import com.xat.core.dto.DepartmentDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Pageable;
@@ -35,12 +35,12 @@ public interface DepartmentRepository extends JpaRepository<Department, UUID> {
    @Query("select u from Department u where u.code = ?1")
    List<Department> findByCode(String code);
 
-   @Query("select new com.globits.core.dto.DepartmentDto(d) from Department d where d.id = ?1")
+   @Query("select new com.xat.core.dto.DepartmentDto(d) from Department d where d.id = ?1")
    DepartmentDto getOneDtoBy(UUID departmentId);
 
    @Query("select d from Department d where d.departmentType = 2 and d.level = 1")
    List<Department> findFaculties();
 
-   @Query("select new com.globits.core.dto.DepartmentDto(d) from Department d where d.parent.id = ?1")
+   @Query("select new com.xat.core.dto.DepartmentDto(d) from Department d where d.parent.id = ?1")
    List<DepartmentDto> getListChild(UUID parentId);
 }

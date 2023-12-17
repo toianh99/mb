@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Department;
+import com.xat.core.domain.Department;
+
 import java.io.Serializable;
 
 public class DepartmentTreeDto implements Serializable {

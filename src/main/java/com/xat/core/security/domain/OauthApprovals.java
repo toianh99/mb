@@ -1,7 +1,7 @@
-package com.globits.security.domain;
+package com.xat.core.security.domain;
 
 import java.util.Date;
-import javax.persistence.Column;
+import jakarta.persistence.Column;
 
 public class OauthApprovals {
    @Column(

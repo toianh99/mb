@@ -1,6 +1,6 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.BaseObject;
+import com.xat.core.domain.BaseObject;
 import java.util.UUID;
 
 public class BaseObjectDto extends AuditableEntityDto {

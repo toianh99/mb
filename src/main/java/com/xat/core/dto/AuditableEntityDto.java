@@ -1,6 +1,6 @@
 package com.xat.core.dto;
 
-import com.globits.core.auditing.AuditableEntity;
+import com.xat.core.auditing.AuditableEntity;
 import org.joda.time.LocalDateTime;
 
 public class AuditableEntityDto {

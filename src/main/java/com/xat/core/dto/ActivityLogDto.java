@@ -1,7 +1,8 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.ActivityLog;
 import java.util.UUID;
+
+import com.xat.core.domain.ActivityLog;
 import org.joda.time.LocalDateTime;
 
 public class ActivityLogDto extends BaseObjectDto {

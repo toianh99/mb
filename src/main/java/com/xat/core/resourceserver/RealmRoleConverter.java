@@ -1,9 +1,9 @@
 package com.xat.core.resourceserver;
 
-import com.globits.security.dto.RoleDto;
-import com.globits.security.dto.UserDto;
-import com.globits.security.service.RoleService;
-import com.globits.security.service.UserService;
+import com.xat.core.security.dto.RoleDto;
+import com.xat.core.security.dto.UserDto;
+import com.xat.core.security.service.RoleService;
+import com.xat.core.security.service.UserService;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;

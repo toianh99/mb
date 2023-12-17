@@ -1,9 +1,9 @@
 package com.xat.core.rest;
 
-import com.globits.core.domain.Person;
-import com.globits.core.service.PersonService;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import com.xat.core.domain.Person;
+import com.xat.core.service.PersonService;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.security.access.annotation.Secured;

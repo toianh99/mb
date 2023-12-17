@@ -1,8 +1,8 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Location;
-import com.globits.core.dto.LocationDto;
-import com.globits.core.dto.ResultMessageDto;
+import com.xat.core.domain.Location;
+import com.xat.core.dto.LocationDto;
+import com.xat.core.dto.ResultMessageDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;

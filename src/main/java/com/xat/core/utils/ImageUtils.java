@@ -5,9 +5,10 @@ import java.awt.image.BufferedImageOp;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import javax.imageio.ImageIO;
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
+
+import javax.imageio.ImageIO;
 
 public class ImageUtils {
    private static final String EMPTY_IMAGE_NAME = "blank.jpg";
@@ -18,7 +19,7 @@ public class ImageUtils {
 
       try {
          BufferedImage bi = ImageIO.read(input);
-         bi = Scalr.resize(bi, Method.ULTRA_QUALITY, size, new BufferedImageOp[0]);
+         bi = Scalr.resize(bi, Method.ULTRA_QUALITY, size);
          ByteArrayOutputStream baos = new ByteArrayOutputStream();
          ImageIO.write(bi, "jpg", baos);
          baos.flush();

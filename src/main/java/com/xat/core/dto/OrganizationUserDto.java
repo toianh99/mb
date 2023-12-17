@@ -1,7 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.OrganizationUser;
-import com.globits.security.dto.UserDto;
+import com.xat.core.domain.OrganizationUser;
+import com.xat.core.security.dto.UserDto;
 
 public class OrganizationUserDto extends BaseObjectDto {
    private OrganizationDto organization;

@@ -1,7 +1,7 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.AdministrativeUnit;
-import com.globits.core.dto.AdministrativeUnitDto;
+import com.xat.core.domain.AdministrativeUnit;
+import com.xat.core.dto.AdministrativeUnitDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;

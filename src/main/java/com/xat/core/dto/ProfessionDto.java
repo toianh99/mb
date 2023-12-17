@@ -1,6 +1,7 @@
 package com.xat.core.dto;
 
-import com.globits.core.domain.Profession;
+import com.xat.core.domain.Profession;
+
 import java.util.UUID;
 
 public class ProfessionDto {

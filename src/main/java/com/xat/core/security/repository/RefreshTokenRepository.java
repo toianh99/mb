@@ -1,7 +1,7 @@
-package com.globits.security.repository;
+package com.xat.core.security.repository;
 
-import com.globits.security.domain.RefreshToken;
-import com.globits.security.domain.User;
+import com.xat.core.security.domain.RefreshToken;
+import com.xat.core.security.domain.User;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

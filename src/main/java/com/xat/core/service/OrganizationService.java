@@ -1,9 +1,9 @@
 package com.xat.core.service;
 
-import com.globits.core.domain.Organization;
-import com.globits.core.dto.OrganizationDto;
-import com.globits.core.dto.OrganizationUserDto;
-import com.globits.core.dto.ResultMessageDto;
+import com.xat.core.domain.Organization;
+import com.xat.core.dto.OrganizationDto;
+import com.xat.core.dto.OrganizationUserDto;
+import com.xat.core.dto.ResultMessageDto;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;

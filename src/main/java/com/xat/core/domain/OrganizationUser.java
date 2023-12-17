@@ -1,12 +1,11 @@
 package com.xat.core.domain;
 
-import com.globits.security.domain.User;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.xat.core.security.domain.User;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 
@@ -14,7 +13,6 @@ import org.hibernate.annotations.NotFoundAction;
 @Table(
    name = "tbl_organization_user"
 )
-@XmlRootElement
 public class OrganizationUser extends BaseObject {
    private static final long serialVersionUID = 2174258240790039379L;
    @ManyToOne

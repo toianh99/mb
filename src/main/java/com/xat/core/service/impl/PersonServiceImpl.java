@@ -1,12 +1,12 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.Person;
-import com.globits.core.repository.PersonRepository;
-import com.globits.core.service.PersonService;
-import com.globits.security.domain.User;
+import com.xat.core.domain.Person;
+import com.xat.core.repository.PersonRepository;
+import com.xat.core.service.PersonService;
+import com.xat.core.security.domain.User;
 import java.util.List;
 import java.util.UUID;
-import javax.persistence.TypedQuery;
+import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -33,21 +33,21 @@ public class PersonServiceImpl extends GenericServiceImpl<Person, UUID> implemen
       Person updatePerson = this.personRepository.getPersonWithAddress(person.getId());
       updatePerson.setAddress(person.getAddress());
       updatePerson.setBirthDate(person.getBirthDate());
-      User user = person.getUser();
-      if (user != null) {
-         User updateUser = updatePerson.getUser();
-         updateUser.setAccountNonExpired(user.isAccountNonExpired());
-         updateUser.setAccountNonLocked(user.isAccountNonLocked());
-         if (user.getRoles() != null) {
-            updateUser.setRoles(user.getRoles());
-         }
-
-         if (user.getUsername() != null) {
-            updateUser.setUsername(user.getUsername());
-         }
-
-         updatePerson.setUser(updateUser);
-      }
+//      User user = person.getUser();
+//      if (user != null) {
+//         User updateUser = updatePerson.getUser();
+//         updateUser.setAccountNonExpired(user.isAccountNonExpired());
+//         updateUser.setAccountNonLocked(user.isAccountNonLocked());
+//         if (user.getRoles() != null) {
+//            updateUser.setRoles(user.getRoles());
+//         }
+//
+//         if (user.getUsername() != null) {
+//            updateUser.setUsername(user.getUsername());
+//         }
+//
+//         updatePerson.setUser(updateUser);
+//      }
 
       return (Person)this.save(updatePerson);
    }

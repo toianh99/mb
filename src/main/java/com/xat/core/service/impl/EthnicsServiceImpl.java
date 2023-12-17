@@ -1,9 +1,9 @@
 package com.xat.core.service.impl;
 
-import com.globits.core.domain.Ethnics;
-import com.globits.core.dto.EthnicsDto;
-import com.globits.core.repository.EthnicsRepository;
-import com.globits.core.service.EthnicsService;
+import com.xat.core.domain.Ethnics;
+import com.xat.core.dto.EthnicsDto;
+import com.xat.core.repository.EthnicsRepository;
+import com.xat.core.service.EthnicsService;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;

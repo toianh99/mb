@@ -1,11 +1,13 @@
-package com.globits.security.rest;
+package com.xat.core.security.rest;
 
-import com.globits.security.domain.Role;
-import com.globits.security.dto.RoleDto;
-import com.globits.security.service.RoleService;
+
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+
+import com.xat.core.security.domain.Role;
+import com.xat.core.security.dto.RoleDto;
+import com.xat.core.security.service.RoleService;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.security.access.annotation.Secured;
@@ -38,7 +40,7 @@ public class RestRoleController {
       method = {RequestMethod.GET}
    )
    public Role getRole(@PathVariable("roleId") String roleId) {
-      return this.roleService.findById(new Long(roleId));
+      return this.roleService.findById(Long.valueOf(roleId));
    }
 
    @RequestMapping(
@@ -77,6 +79,6 @@ public class RestRoleController {
       method = {RequestMethod.DELETE}
    )
    public Role removeRole(@PathVariable("roleId") String roleId) {
-      return (Role)this.roleService.delete(new Long(roleId));
+      return (Role)this.roleService.delete(Long.valueOf(roleId));
    }
 }
